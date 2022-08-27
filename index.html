@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de arte</title>
+
+    <link rel="shortcut icon" href="src/imagens/arte-mulher-favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/arte-mulher-favicon.png" alt="mulher-favicon" class="icon">
+        <h1 class="titulo">Belas Pinturas</h1>
+    </header>
+    <main class="arte-slider">
+        
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="src/imagens/seta.png" alt="seta-voltar">
+        </button>
+
+        <ul class="lista-artes">
+            <li class="cartao selecionado">
+                <div class="info">
+                    <h2 class="autor">Peter Paul Rubens</h2>
+                    <p class="ano">ANO 1606/1608</p>
+                </div>
+
+                <div class="container-imagem">
+                <img src="src/imagens/a-queda-de-Phaeton.png" alt="a-queda-de-phaeton" Class="arte">
+                </div>
+                
+                <div class="descricao">
+                    <h3><a href="https://www.nga.gov/collection/art-object-page.71349.html" target="_blank" class="nome-arte">A Queda De Phaeton.</a></h3>
+                </div>
+
+            </li>
+            <li class="cartao">
+                <div class="info">
+                    <h2 class="autor">Jean-Baptiste Corot</h2>
+                    <p class="ano">ANO 1865/1870</p>
+                </div>
+
+                <div class="container-imagem">
+                <img src="src/imagens/dançando-debaixo-da-arvore.png" alt="dançando-debaixo-da-arvore" Class="arte">
+                </div>
+                
+                <div class="descricao">
+                    <h3><a href="https://www.nga.gov/collection/art-object-page.176397.html" target="_blank" class="nome-arte">Dança Debaixo Das Árvores, A Beira Do Rio.</a></h3>
+                </div>
+
+            </li>
+            <li class="cartao">
+                <div class="info">
+                    <h2 class="autor">Claude-Joseph Vernet</h2>
+                    <p class="ano">ANO 1772</p>
+                </div>
+
+                <div class="container-imagem">
+                <img src="src/imagens/naufragio.png" alt="naufragio" Class="arte">
+                </div>
+                <div class="descricao">
+                    <h3><a href="https://www.nga.gov/collection/art-object-page.111194.html" target="_blank" class="nome-arte">O Naufrágio.</a></h3>
+                </div>
+
+            </li>
+            <li class="cartao">
+                <div class="info">
+                    <h2 class="autor">John Frederick Kensett</h2>
+                    <p class="ano">ANO 1857</p>
+                </div>
+
+                <div
+                class="container-imagem">
+                <img src="src/imagens/rio-azul.png" alt="rio-azul" Class="arte">
+                </div>
+
+                <div class="descricao">
+                    <h3><a href="https://www.nga.gov/collection/art-object-page.42389.html" target="_blank" class="nome-arte">Pedra Do Farol.</a></h3>
+                </div>
+            </li>
+            <li class="cartao">
+                <div class="info">
+                    <h2 class="autor">Joseph Decker</h2>
+                    <p class="ano">ANO 1890/1895</p>
+                </div>
+
+                <div
+                class="container-imagem">
+                <img src="src/imagens/Uvas.png" alt="Uvas" Class="arte">
+                </div>
+                
+                <div class="descricao">
+                    <h3><a href="https://www.nga.gov/collection/art-object-page.89672.html" target="_blank" class="nome-arte">Uvas.</a></h3>
+                </div>
+
+            </li>
+        </ul>
+
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="src/imagens/seta.png" alt="seta-avancar">
+        </button>
+
+    </main>
+        <footer class="rodape">
+            <a href="https://www.nga.gov/collection-search-result.html?sortOrder=DEFAULT&artobj_downloadable=Image_download_available&pageSize=30&pageNumber=1&lastFacet=artobj_downloadable" target="_blank" class="fonte-nga">Download pinturas.</a>
+</footer>
+
+<script src="src/js/index.js"></script>
+
+</body>
+</html>

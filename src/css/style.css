@@ -1,0 +1,147 @@
+body {
+    font-family: 'Aboreto', cursive;
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.cabecalho .icon {
+    height: 50px;
+    width: 50px;
+    border: solid 3px #674332;
+    border-radius: 5px;
+    
+}
+
+.cabecalho .titulo {
+    font-size: 40px;
+    color:#e7bfa9
+}
+
+.arte-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.lista-artes {
+    width: 1180px;
+    height: 765px;
+    position: relative;
+}
+
+.btn-seta {
+    background: #e7bfa9;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+   background-color: #674332; 
+}
+
+.cartao {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.cartao .info {
+    opacity: 0.7;
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cartao .autor {
+    font-size: 20px;
+}
+
+.cartao .info .ano {
+    background-color: #f1de89;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.cartao .container-imagem {
+    max-width: 1200px;
+    max-height: 650px;
+    position: relative;
+}
+
+.cartao .arte {
+    max-width: 1200px;
+    max-height: 650px;
+}
+
+.descricao {
+    font-size: 15px;
+    opacity: 0.7;
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.descricao .nome-art {
+    text-decoration: none;
+    color: #021021;
+    font-style: italic;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.rodape .fonte-nga {
+    text-decoration: none;
+    font-size: 25px;
+    color: #433242;
+    background-color: #cec494;
+    padding: 10px;
+    border-radius: 5px;
+}
