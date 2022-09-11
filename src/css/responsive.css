@@ -241,8 +241,9 @@
 }
 
 @media (max-width: 420px) {
+
     .lista-artes {
-        height: 240px;
+        height: 530px;
     }
 
     .cartao .container-imagem {
@@ -265,10 +266,6 @@
         border: 0;
     }
 
-    .lista-artes {
-        height: 230px;
-    }
-
     .cartao .container-imagem {
         height: 112px;
         width: 200px;
@@ -281,9 +278,6 @@
 }
 
 @media (max-width: 320px) {
-    .lista-artes {
-        height: 400px;
-    }
 
     .cartao .container-imagem {
         height: 84px;
@@ -297,9 +291,6 @@
 }
 
 @media (max-width: 255px) {
-    .lista-artes {
-        height: 400px;
-    }
 
     .cartao .container-imagem {
         height: 60px;
@@ -346,6 +337,7 @@
         justify-content: center;
         align-items: center;
         background-size: cover;
+        margin: 0;
     }
 
     .btn-seta {
@@ -358,7 +350,6 @@
     }
         
     .lista-artes {
-        height: 350px;
         width: 100%;
     }
 
