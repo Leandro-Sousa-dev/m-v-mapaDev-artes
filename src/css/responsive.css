@@ -1,163 +1,42 @@
-@media (max-width: 1400px) {
-    .arte-slider {
-        padding: 0 20px;
-        gap: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-    }
-
-    .btn-seta {
-        width: 30px;
-        height: 30px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        
-    .lista-artes {
-        height: 700px;
-    }
-
-    .cartao .container-imagem {
-        height: 562px;
-    }
-
-    .cartao .arte {
-        max-height: 600px;
-        max-width: 1000px;
-    }
-
-    .cartao .info .autor {
-        max-width: 50%;
-        font-size: 18px;
-    }
-
-    .cartao .info .ano {
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 1150px) {
-    .lista-artes {
-        height: 600px;
-    }
-
-    .cartao .container-imagem {
-        height: 450px;
-    }
-
-
-    .cartao .arte {
-        max-height: 450px;
-        max-width: 800px;
-    }
-
-}
-
-@media (max-width: 920px) {  
-    .lista-artes {
-        height: 480px;
-    }
-    .cartao .container-imagem {
-        height: 354px;
-    }
-
-    .cartao .arte {
-        max-height: 500px;
-        max-width: 630px;
-    }
-
-}
-
-@media (max-width: 820px) {
-    .lista-artes {
-        height: 450px;
-    }
-    .cartao .container-imagem {
-        height: 309px;
-    }
-
-    .cartao .arte {
-        max-height: 500px;
-        max-width: 550px;
-    }
-
-}
-
 @media (max-width: 720px) {
     .lista-artes {
         height: 400px;
     }
-    .cartao .container-imagem {
-        height: 270px;
-    }
-
-    .cartao .arte {
-        max-height: 300px;
-        max-width: 480px;
-    }
-}
-
-@media (max-width: 620px) {
-    .lista-artes {
-        height: 350px;
-    }
-
-    .cartao .container-imagem {
-        height: 236px;
-    }
-
-    .cartao .arte {
-        max-height: 400px;
-        max-width: 420px;
-    }
-}
-
-@media (max-width: 550px) {
 
     .cabecalho .titulo {
+        font-size: 25px;
+    }
+
+    .rodape .fonte-nga {
         font-size: 20px;
     }
 
-    .cabecalho .icon {
-        max-height: 35px;
-        max-width: 35px;
+}
+
+@media (max-width: 550px) { 
+    .arte-slider {
+        min-width: 100px;
+        max-width: 420px;
     }
 
-    .arte-slider {
-        padding: 0 15px;
-        gap: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
+    .lista-artes {
+        height: 600px;
     }
 
     .btn-seta {
-        width: 20px;
-        height: 20px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 0;
+        margin: 0 5px;
     }
-        
-    .lista-artes {
-        height: 270px;
+
+    .btn-seta:hover span {
+        padding-left: 5px;
     }
-    .cartao .container-imagem {
-        height: 185px;
-        width: 330px;
+
+    .cartao {
+        margin: 0 40px;
     }
 
     .cartao .arte {
-        max-height: 250px;
-        max-width: 330px;
+        width: 100%;
     }
 
     .cartao .info .autor {
@@ -180,6 +59,13 @@
 }
 
 @media (max-width: 475px) {
+    body {
+        background-size: auto;
+    }
+
+    .cabecalho {
+        gap: 5px;
+    }
 
     .cabecalho .titulo {
         font-size: 15px;
@@ -188,38 +74,6 @@
     .cabecalho .icon {
         max-height: 30px;
         max-width: 30px;
-    }
-
-    .arte-slider {
-        padding: 0 15px;
-        gap: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-    }
-
-    .btn-seta {
-        width: 10px;
-        height: 10px;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        
-    .lista-artes {
-        height: 260px;
-    }
-
-    .cartao .container-imagem {
-        height: 168px;
-        width: 300px;
-    }
-
-    .cartao .arte {
-        max-height: 190px;
-        max-width: 300px;
     }
 
     .cartao .info .autor {
@@ -243,63 +97,36 @@
 @media (max-width: 420px) {
 
     .lista-artes {
-        height: 530px;
+        height: 600px;
     }
 
-    .cartao .container-imagem {
-        height: 146px;
-        width: 260px;
-    }
-
-    .cartao .arte {
-        max-height: 150px;
-        max-width: 260px;
-    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 340px) {
+
+    .lista-artes {
+        height: 590px;
+    }
+
     .btn-seta {
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 0;
+        z-index: 2;
     }
 
-    .cartao .container-imagem {
-        height: 112px;
-        width: 200px;
+    .cartao {
+        margin: 0 5px;
     }
 
     .cartao .arte {
-        max-height: 150px;
-        max-width: 200px;
+        width: 100%;
     }
-}
+    
 
-@media (max-width: 320px) {
-
-    .cartao .container-imagem {
-        height: 84px;
-        width: 150px;
-    }
-
-    .cartao .arte {
-        max-height: 100px;
-        max-width: 150px;
-    }
 }
 
 @media (max-width: 255px) {
 
-    .cartao .container-imagem {
-        height: 60px;
-        width: 106px;
-    }
-
-    .cartao .arte {
-        height: 60px;
-        width: 106px;
+    .lista-artes {
+        height: 440px;
     }
 
     .cartao .info .autor {
@@ -325,42 +152,8 @@
         font-size: 10px;
     }
 
-    .cabecalho .icon {
-        max-height: 20px;
-        max-width: 20px;
-    }
-
-    .arte-slider {
-        padding: 0 5px;
-        gap: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        margin: 0;
-    }
-
-    .btn-seta {
-        width: 5px;
-        height: 5px;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        
-    .lista-artes {
-        width: 100%;
-    }
-
-    .cartao .container-imagem {
-        height: 60px;
-        width: 106px;
-    }
-
-    .cartao .arte {
-        max-height: 60px;
-        max-width: 106px;
+    .cartao {
+        margin: 0 2px;
     }
 
     .cartao .info .autor {

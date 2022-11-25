@@ -19,15 +19,17 @@
 <body>
     <header class="cabecalho">
         <img src="src/imagens/arte-mulher-favicon.png" alt="mulher-favicon" class="icon">
-        <h1 class="titulo">Belas Pinturas</h1>
+        <h1 class="titulo">Minha Galeria</h1>
     </header>
+
     <main class="arte-slider">
-        
-        <button class="btn-seta btn-voltar" id="btn-voltar">
-            <img src="src/imagens/seta.png" alt="seta-voltar">
-        </button>
 
         <ul class="lista-artes">
+
+            <button class="btn-seta btn-voltar" id="btn-voltar">
+                <img src="src/imagens/seta.png" alt="seta-voltar"><span></span>
+            </button>
+
             <li class="cartao selecionado">
                 <div class="info">
                     <h2 class="autor">Peter Paul Rubens</h2>
@@ -35,9 +37,17 @@
                 </div>
 
                 <div class="container-imagem">
-                <img src="src/imagens/a-queda-de-Phaeton.png" alt="a-queda-de-phaeton" Class="arte">
-                </div>
                 
+                    <picture>
+                    
+                        <source srcset="src/imagens/a-queda-de-Phaeton-pequeno.png" media="(max-width: 550px)" class="arte">
+
+                    
+                        <img src="src/imagens/a-queda-de-Phaeton.png" alt="a-queda-de-phaeton" class="arte">
+                    </picture>
+                
+                </div>
+
                 <div class="descricao">
                     <h3><a href="https://www.nga.gov/collection/art-object-page.71349.html" target="_blank" class="nome-arte">A Queda De Phaeton.</a></h3>
                 </div>
@@ -50,7 +60,12 @@
                 </div>
 
                 <div class="container-imagem">
-                <img src="src/imagens/dançando-debaixo-da-arvore.png" alt="dançando-debaixo-da-arvore" Class="arte">
+                    <picture>
+                    
+                        <source srcset="src/imagens/dançando-debaixo-da-arvore-pequeno.png" media="(max-width: 550px)">
+                    
+                        <img src="src/imagens/dançando-debaixo-da-arvore.png" alt="dançando-debaixo-da-arvore" class="arte">
+                    </picture>
                 </div>
                 
                 <div class="descricao">
@@ -65,7 +80,12 @@
                 </div>
 
                 <div class="container-imagem">
-                <img src="src/imagens/naufragio.png" alt="naufragio" Class="arte">
+                    <picture>
+                    
+                        <source srcset="src/imagens/naufragio-pequeno.png" media="(max-width: 550px)">
+
+                        <img src="src/imagens/naufragio.png" alt="naufragio" class="arte">
+                    </picture>
                 </div>
                 <div class="descricao">
                     <h3><a href="https://www.nga.gov/collection/art-object-page.111194.html" target="_blank" class="nome-arte">O Naufrágio.</a></h3>
@@ -80,7 +100,12 @@
 
                 <div
                 class="container-imagem">
-                <img src="src/imagens/rio-azul.png" alt="rio-azul" Class="arte">
+                <picture>
+                    
+                    <source srcset="src/imagens/rio-azul-pequeno.png" media="(max-width: 550px)">
+                
+                    <img src="src/imagens/rio-azul.png" alt="rio-azul" class="arte">
+                </picture>
                 </div>
 
                 <div class="descricao">
@@ -93,21 +118,25 @@
                     <p class="ano">ANO 1890/1895</p>
                 </div>
 
-                <div
-                class="container-imagem">
-                <img src="src/imagens/Uvas.png" alt="Uvas" Class="arte">
+                <div class="container-imagem">
+                    <picture>
+                    
+                        <source srcset="src/imagens/uvas-pequeno.png" media="(max-width: 550px)">
+                    
+                        <img src="src/imagens/uvas.png" alt="uvas" class="arte">
+                    </picture>
                 </div>
                 
                 <div class="descricao">
                     <h3><a href="https://www.nga.gov/collection/art-object-page.89672.html" target="_blank" class="nome-arte">Uvas.</a></h3>
                 </div>
-
+        
             </li>
-        </ul>
 
-        <button class="btn-seta btn-avancar" id="btn-avancar">
-            <img src="src/imagens/seta.png" alt="seta-avancar">
-        </button>
+            <button class="btn-seta btn-avancar" id="btn-avancar">
+                <img src="src/imagens/seta.png" alt="seta-avancar"><span></span>
+            </button>
+        </ul>
 
     </main>
         <footer class="rodape">

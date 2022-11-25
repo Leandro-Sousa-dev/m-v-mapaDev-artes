@@ -3,8 +3,8 @@ body {
     background-image: url(../imagens/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: auto;
 }
+
 
 .cabecalho {
     display: flex;
@@ -28,36 +28,61 @@ body {
 }
 
 .arte-slider {
+    min-width: 320px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     gap: 30px;
-    margin: 20px 0px;
+    margin: 20px auto;
 }
 
-.lista-artes {
-    width: 1180px;
-    height: 765px;
+.arte-slider .lista-artes {
+    width: 1200px;
+    height: 675px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
 .btn-seta {
-    background: #e7bfa9;
-    width: 70px;
-    height: 70px;
-    border-radius: 40px;
+    background: none;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5s;
+    margin: 0 15px;
 }
 
 .btn-seta.btn-voltar {
     transform: rotateY(180deg);
 }
 
-.btn-seta:hover {
-   background-color: #674332; 
+.btn-seta span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-seta span:after {
+    font-size: 30px;
+    content: '|';
+    position: absolute;
+    opacity: 0;
+    top: -43px;
+    right: -5px;
+    transition: 0.5s;
+}
+
+.btn-seta:hover span {
+    padding-left: 25px;
+}
+  
+.btn-seta:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .cartao {
@@ -66,10 +91,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    padding: 12px;
+    padding: 2px 6px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: opacity 0.3s ease-in-out;
+    margin: 0 65px;
 }
 
 .selecionado {
@@ -102,23 +128,22 @@ body {
 
 .cartao .container-imagem {
     max-width: 1200px;
-    max-height: 650px;
-    position: relative;
 }
 
 .cartao .arte {
-    max-width: 1200px;
-    max-height: 650px;
+    width: 100%;
 }
 
-.descricao {
+.cartao .descricao {
+    position: relative;
+    top: -4px;
     font-size: 15px;
     opacity: 0.7;
     background-color: rgba(179, 177, 185, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 0px;
+    padding: 5px 2px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
